@@ -14,11 +14,11 @@
 # limitations under the License.
 #
 
-# Inherit some common dotOS stuff.
-$(call inherit-product, vendor/dot/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, $(LOCAL_PATH)/device_A7010a48.mk)
+$(call inherit-product, $(LOCAL_PATH)/device_marino_f.mk)
 
 # Device display
 TARGET_SCREEN_HEIGHT := 1920
@@ -26,9 +26,9 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Device identifier
 PRODUCT_BRAND := lenovo
-PRODUCT_DEVICE := A7010a48
+PRODUCT_DEVICE := marino_f
 PRODUCT_MANUFACTURER := LENOVO
-PRODUCT_MODEL := Lenovo K4 Note
-PRODUCT_NAME := dot_A7010a48
-PRODUCT_RELEASE_NAME := A7010a48
+PRODUCT_MODEL := Lenovo K8 Plus
+PRODUCT_NAME := lineage_marino_f
+PRODUCT_RELEASE_NAME := marino_f
 PRODUCT_RESTRICT_VENDOR_FILES := false

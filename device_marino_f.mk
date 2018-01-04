@@ -39,7 +39,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Vendor product configurations
-$(call inherit-product-if-exists, vendor/lenovo/A7010a48/A7010a48-vendor.mk)
+$(call inherit-product-if-exists, vendor/lenovo/marino_f/marino_f-vendor.mk))
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
 	ro.secure=0 \

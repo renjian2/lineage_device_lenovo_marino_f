@@ -1,9 +1,10 @@
 #
-# system.prop for Lenovo K4 Note
+#
+# system.prop for Lenovo K8 Plus
 #
 
 # RIL
-rild.libpath=/system/lib64/mtk-ril.so
+rild.libpath=mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 
 # Wifi
@@ -16,7 +17,7 @@ wifi.tethering.interface=ap0
 wifi.direct.interface=p2p0
 
 # OpenGL
-ro.opengles.version=196609
+ro.opengles.version=196610
 ro.kernel.qemu.gles=0
 
 # Dalvik
@@ -30,14 +31,49 @@ persist.af.audio_patch_fm=1
 
 ro.zygote.preload.enable=0
 
-# Disable Navigation Bar
+# Enable soft keys
 qemu.hw.mainkeys=1
 
 # Disable dirty region for Mali
 debug.hwui.render_dirty_regions=false
 
-# LCD Density
+# LCD density
 ro.sf.lcd_density=480
+
+ro.sf.hwrotation=0
+
+# Mediatek
+
+ro.mtk_gemini_enhancement=1
+ro.mtk_eap_sim_aka=1
+ro.mtk_enable_md1=1
+ro.mtk_flight_mode_power_off_md=1
+ro.mtk_sim_hot_swap=1
+ro.mtk_world_phone=1
+ro.mtk_cta_set=1
+ro.mtk_lte_support=1
+ro.mtk_rild_read_imsi=1
+fmradio.driver.enable=0
+ro.mtk_bt_support=1
+ro.mtk_agps_app=1
+ro.mtk_wlan_support=1
+ro.mtk_gps_support=1
+persist.md.perm.checked=1
+
+ro.mediatek.chip_ver=S01
+ro.mediatek.platform=MT6757
+ro.mediatek.version.release=alps-mp-n1.mp5-V1.19_lenovo6757.36.n.n1_P86
+
+bgw.current3gband=0
+ro.sf.hwrotation=0
+persist.mtk.wcn.combo.chipid=-1
+drm.service.enabled=true
+wfd.dummy.enable=1
+persist.sys.display.clearMotion=1
+ro.mtk_clearmotion_support=1
+keyguard.no_require_sim=true
+camera.disable_zsl_mode=1
+persist.debug.wfd.enable=1
 
 # RIL
 ro.telephony.sim.count=2
@@ -56,40 +92,3 @@ ro.mtk_gemini_support=1
 persist.gemini.sim_num=2
 ro.gemini.smart_sim_switch=false
 
-# MTK
-ro.mtk_gemini_enhancement=1
-ro.mtk_eap_sim_aka=1
-ro.mtk_enable_md1=1
-ro.mtk_flight_mode_power_off_md=1
-ro.mtk_sim_hot_swap=1
-ro.mtk_world_phone=1
-ro.mtk_cta_set=1
-ro.mtk_lte_support=1
-ro.mtk_rild_read_imsi=1
-fmradio.driver.enable=0
-ro.mtk_bt_support=1
-ro.mtk_agps_app=1
-ro.mtk_wlan_support=1
-ro.mtk_gps_support=1
-persist.md.perm.checked=1
-
-ro.mediatek.chip_ver=S01
-ro.mediatek.version.release=alps-mp-m0.mp1-V2.39.1_wtk6753.65u.m0_P16
-ro.mediatek.platform=MT6735
-bgw.current3gband=0
-ro.sf.hwrotation=0
-persist.mtk.wcn.combo.chipid=-1
-drm.service.enabled=true
-wfd.dummy.enable=1
-persist.sys.display.clearMotion=1
-ro.mtk_clearmotion_support=1
-keyguard.no_require_sim=true
-camera.disable_zsl_mode=1
-persist.debug.wfd.enable=1
-
-# Volte
-#ro.mtk_ims_support=1
-#ro.mtk_volte_support=1
-#persist.mtk.volte.enable=1
-#persist.radio.mtk_dsbp_support=1
-#persist.mtk_dynamic_ims_switch=1
